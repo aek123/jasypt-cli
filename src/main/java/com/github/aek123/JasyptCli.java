@@ -17,7 +17,7 @@ public class JasyptCli {
             List<String> codes = Arrays.stream(CliFunction.values())
                                        .map(CliFunction::getCode)
                                        .toList();
-            System.out.printf("You to use one of %s functions to work as first argument%n", codes);
+            System.out.printf("You have to specify one of %s function to work as first argument%n", codes);
             return;
         }
         CliFunction function = CliFunction.findBy(args[0]);
